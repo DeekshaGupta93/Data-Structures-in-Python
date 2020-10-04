@@ -1,0 +1,52 @@
+About Python:
+Python is an interpreted, high-level and general-purpose programming language. Created by Guido van Rossum and first released in 1991. Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly, procedural), object-oriented, and functional programming.
+Python are multi-paradigm, you can write programs or libraries that are largely procedural, object-oriented, or functional in all of these languages.
+It depends on what you mean by functional. Python does have some features of a functional language.
+OOP's concepts like, Classes,Encapsulation,Polymorphism, Inheritance etc.. in Python makes it as an object oriented programming language.
+In Similar way we can created procedural program through python using loops ,for ,while etc ..
+
+
+Some Basic terminologies:
+Source Code: Original code (usually typed by a human into a computer)
+Translation: Converting source code into something a computer can read (i.e. machine code)
+Run-Time: Period when program is executing commands (after compilation, if compiled)
+Compiled: Code translated before run-time
+Interpreted: Code translated on the fly, during execution
+
+
+Interpreted Vs comoiled:
+Python uses an interpreter and hence called an interpreted language.
+For the most part, Python is an interpreted language and not a compiled one, although compilation is a step. Python code, written in .py file is first compiled to what is called bytecode  which is stored with a .pyc or .pyo format.
+Instead of translating source code to machine code like C++, Python code is translated to bytecode. This bytecode is a low-level set of instructions that can be executed by an interpreter. In most PCs, Python interpreter is installed at /usr/local/bin/python3.8. Instead of executing the instructions on CPU, bytecode instructions are executed on a Virtual Machine.Python Virtual Machine is the part of the Python system that actually runs the python code that is in the format of bytecode. It takes the bytecode instructions one by one and executes the action.
+ Steps involved when you run your Python code,
+The compiler receives the source code.
+The compiler checks the syntax of each line in the source code.
+If the compiler encounters an error, it halts the translation process with an error message (Syntax error).
+Else if the instruction is well formatted, then it translates the source code to Bytecode.
+Bytecode is sent to the Python Virtual Machine (PVM)
+Bytecode along with the inputs and Library modules is given as the input to the PVM.
+PVM executes the Bytecode and if any error occurs, it displays an error message (Runtime error).
+Otherwise, if there is no error in execution, it results in the output.
+
+
+
+Difference between Python and Cpython:
+Python is a language.
+CPython is the default byte-code interpreter(compiling to interpreting) of Python, which is written in C.
+There is also other implementation of Python such as IronPython (for .NET), Jython (for Java), etc.
+
+
+Dynamically Typed:
+A language is dynamically-typed if the type of a variable is checked during run-time. 
+When we declare a variable in C or alike languages, this sets aside an area of memory for holding values allowed by the data type of the variable. The memory allocated will be interpreted as the data type suggests. If it’s an integer variable the memory allocated will be read as an integer and so on. When we assign or initialize it with some value, that value will get stored at that memory location. At compile time, initial value or assigned value will be checked. So we cannot mix types. Example: initializing a string value to an int variable is not allowed and the program will not compile.
+But Python is a dynamically typed language. It doesn’t know about the type of the variable until the code is run. So declaration is of no use. What it does is, It stores that value at some memory location and then binds that variable name to that memory container. And makes the contents of the container accessible through that variable name. So the data type does not matter. As it will get to know the type of the value at run-time.
+The types are checked before running (static) and the type error is immediately caught!  If it was dynamic, it wouldn’t throw any errors even though the code would be looked at during compilation.
+
+Strongly Typed:
+A strongly-typed language is one in which variables are bound to specific data types, and will result in type errors if types do not match up as expected in the expression — regardless of when type checking occurs. Python is strong-typed, and so is Java.
+Javascript is weakly typed.
+
+
+Garbage Collection:
+Python deletes unwanted objects (built-in types or class instances) automatically to free the memory space. The process by which Python periodically frees and reclaims blocks of memory that no longer are in use is called Garbage Collection.
+Python's garbage collector runs during program execution and is triggered when an object's reference count reaches zero. An object's reference count changes as the number of aliases that point to it changes.
